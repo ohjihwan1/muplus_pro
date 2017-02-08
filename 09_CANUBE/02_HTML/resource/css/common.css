@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url(reset.css);
 
+body{background-color:#f2f2f2;}
 
 header{position:fixed; top:0; width:100%; height:55px; padding:20px 0 0 15px; box-sizing:border-box; z-index:50;}
 header h1{width:100px; height:18px; background:url(../images/logo.png) no-repeat 50%; background-size:cover;}
@@ -12,7 +13,25 @@ header h1{width:100px; height:18px; background:url(../images/logo.png) no-repeat
 .sl1{overflow:hidden; position:absolute; width:100%; height:100%; background:url(../images/sl_bg1.jpg) no-repeat 50%; background-size:cover;}
 .sl2{overflow:hidden; position:absolute; width:100%; height:100%; background:url(../images/sl_bg2.jpg) no-repeat 50%; background-size:cover;}
 
-footer{overflow:hidden; position:fixed; bottom:0; width:100%; padding:8px 0; z-index:50; background-color:#000}
+.user-menu{position:absolute; width:100%; padding:15px 15px 78px; box-sizing:border-box;}
+.user-menu li{margin-top:7px; border:1px solid #d7d7d7; font-size:1rem; box-sizing:border-box; border-radius:3px; box-shadow:1px 1px 2px 0 #ddd;}
+.user-menu li:first-child{margin-top:0;}
+.user-menu li.menu-con1{background:url(../images/menu_con1.png) no-repeat 31px 50%; background-size:30px auto;}
+.user-menu li.menu-con2{background:url(../images/menu_con2.png) no-repeat 31px 50%; background-size:35px auto;}
+.user-menu li.menu-con3{background:url(../images/menu_con3.png) no-repeat 31px 50%; background-size:38px auto;}
+.user-menu li.menu-con4{background:url(../images/menu_con4.png) no-repeat 31px 50%; background-size:45px auto;}
+.user-menu li.menu-con5{background:url(../images/menu_con5.png) no-repeat 31px 50%; background-size:45px auto;}
+.user-menu li.menu-con6{background:url(../images/menu_con6.png) no-repeat 31px 50%; background-size:45px auto;}
+.user-menu li.menu-con7{background:url(../images/menu_con7.png) no-repeat 31px 50%; background-size:34px auto;}
+.user-menu li a{display:block; position:relative;  padding:26px 0 26px 88px; font-size:1.7em;}
+.user-menu li a:after{content:''; position:absolute; right:20px; top:50%; width:9px; height:16px; margin-top:-8px; background:url(../images/menu_arr.png) no-repeat; background-size:9px auto;}
+.user-menu a em{position:absolute; left:50px; top:15px; width:24px; height:24px; padding-top:3px; border-radius:24px; box-sizing:border-box; text-align:center; color:#fff; font-size:13px; background-color:#f47726;}
+.user-menu li a span{font-size:0.82em;}
+.user-menu li:active{border:2px solid #f47726; border-radius:4px;}
+.user-menu li:active a{color:#f47726; }
+.user-menu li:active a:after{content:''; position:absolute; right:20px; top:50%; width:9px; height:16px; margin-top:-8px; background:url(../images/menu_arr_on.png) no-repeat; background-size:9px auto;}
+
+footer{overflow:hidden; position:fixed; bottom:0; width:100%; padding:8px 0; z-index:50; font-size:1rem; background-color:#000}
 footer a{float:left; width:25%; padding-top:32px; font-size:1.1em; color:#fff; text-align:center;}
 footer a.bt1{background:url(../images/f_icon_sale.png) no-repeat 51% 0; background-size:auto 30px;}
 footer a.bt2{background:url(../images/f_icon_spanner.png) no-repeat 50% 0; background-size:auto 30px;}

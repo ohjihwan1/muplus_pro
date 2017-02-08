@@ -14,7 +14,7 @@
 
 
 /* reset */
-* {letter-spacing:-0.8px; line-height:normal; font-size:13px; font-family:'Nanum Gothic','맑은고딕', 'Malgun Gothic','돋움', 'Dotum', sans-serif;color:#444;}
+* {letter-spacing:-0.8px; line-height:normal; font-size:62.5%; font-family:'Nanum Gothic','맑은고딕', 'Malgun Gothic','돋움', 'Dotum', sans-serif;color:#444;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
 fieldset,img {border:0 none}
 dl,ul,ol,menu,li {list-style:none}
