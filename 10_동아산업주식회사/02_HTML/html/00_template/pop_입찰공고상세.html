@@ -1,0 +1,242 @@
+<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>동하산업</title>
+<!-- CSS -->
+<link rel="stylesheet" href="../../resource/css/common.css" type="text/css" />
+<!-- javascript -->
+<script src="../../resource/js/jquery-1.12.3.js" type="text/javascript"></script>
+<script src="../../resource/js/jquery-ui.js" type="text/javascript"></script>
+<script src="../../resource/js/common.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="pop_wrap" style="width:900px;"><!-- 개발 적용시 style="width:900px;" 삭제  -->
+	<div class="pop_tit">
+		<h2>입찰공고상세</h2>
+	</div>
+	<div class="pop_cont">
+		
+		<div class="btnArea type2 p_0">
+			<a href="#none" class="btnL">저장</a>
+		</div>
+
+			
+		<div class="sub_tit">
+			<h4>기본정보</h4>
+		</div>
+
+		<table class="tableStyle m_t0">
+			<colgroup>
+				<col style="width:20%;">
+				<col style="width:30%;">
+				<col style="width:20%;">
+				<col style="width:*">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>입찰번호&middot;차수</th>
+					<td>BD2017000058-1</td>
+					<th>담당자</th>
+					<td><input type="text" class="w180" placeholder="홍길일"/></td>
+				</tr>
+				<tr>
+					<th>입찰명</th>
+					<td colspan="3">
+						<input type="text" class="wp100" value="EEEE"/>
+					</td>
+				</tr>
+				<tr>
+					<th>입찰방법</th>
+					<td>
+						<label><input type="radio">총액제</label>
+						<label><input type="radio">품목별</label>
+					</td>
+					<th>계약방법</th>
+					<td>
+						<label><input type="radio">총액</label>
+						<label><input type="radio">단가</label>
+					</td>
+				</tr>
+				<tr>
+					<th>경쟁방법</th>
+					<td>
+						<label><input type="radio">일반경쟁</label>
+						<label><input type="radio">지명경쟁</label>
+						<label><input type="radio">제한경쟁</label>
+					</td>
+					<th>평가방법</th>
+					<td>
+						<select class="w120">
+							<option>가격평가</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>낙찰방법</th>
+					<td>
+						<select class="w120">
+							<option>최저가</option>
+						</select>
+					</td>
+					<th>예가방식</th>
+					<td>
+						<label><input type="radio">미사용</label>
+						<label><input type="radio">예가사용</label>
+					</td>
+				</tr>
+				<tr>
+					<th>계약기간</th>
+					<td colspan="3">
+						<input type="text" class="datepicker w80"> ~ <input type="text" class="datepicker w80">
+					</td>
+				</tr>
+				<tr>
+					<th>공고일시</th>
+					<td colspan="3">
+						<input type="text" class="datepicker w80"> <input type="text" class="w30"> 시 <input type="text" class="w30"> 분
+					</td>
+				</tr>
+				<tr>
+					<th>현장설명회개최여부</th>
+					<td>
+						<label><input type="radio">미개최</label>
+						<label><input type="radio">개최</label>
+					</td>
+					<th>현장설명회일시</th>
+					<td>
+						<input type="text" class="datepicker w80"> <input type="text" class="w30"> 시 <input type="text" class="w30"> 분
+					</td>
+				</tr>
+				<tr>
+					<th>현장설명회장소</th>
+					<td colspan="3">
+						<input type="text" class="wp100">
+					</td>
+				</tr>
+				<tr>
+					<th>참가신청접수여부</th>
+					<td>
+						<label><input type="radio">미접수</label>
+						<label><input type="radio">접수</label>
+					</td>
+					<th>참가신청마감일시</th>
+					<td>
+						<input type="text" class="datepicker w80"> <input type="text" class="w30"> 시 <input type="text" class="w30"> 분
+					</td>
+				</tr>
+				<tr>
+					<th>입찰서접수개시일시</th>
+					<td>
+						<input type="text" class="datepicker w80"> <input type="text" class="w30"> 시 <input type="text" class="w30"> 분
+					</td>
+					<th>입찰서접수마감일시</th>
+					<td>
+						<input type="text" class="datepicker w80"> <input type="text" class="w30"> 시 <input type="text" class="w30"> 분
+					</td>
+				</tr>
+				<tr>
+					<th>추정금액</th>
+					<td colspan="3">0</td>
+				</tr>
+				<tr>
+					<th>참가자격</th>
+					<td colspan="3">
+						<textarea rows="5"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<th>특기사항</th>
+					<td colspan="3">
+						<textarea rows="5"></textarea>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<div class="sub_tit">
+			<h4>입찰물품 <em>(금액 : 0)</em></h4>
+			<div class="f_right">
+				<a href="#none" class="gBtn"><em class="icon08">추가</em></a>
+				<a href="#none" class="gBtn"><em class="icon08">삭제</em></a>
+			</div>
+		</div>
+
+		<img src="../../resource/images/common/s_realGride_sample_img.jpg" alt="" class="wp100 m_t5"/>
+		
+		<div class="tbl_bot_area">
+			<div class="f_right">
+				<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="sub_tit p_t10">
+			<h4>참여업체</h4>
+		</div>
+		<img src="../../resource/images/common/s_realGride_sample_img.jpg" alt="" class="wp100 m_t5"/>
+		
+		<div class="tbl_bot_area">
+			<div class="f_right">
+				<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="sub_tit">
+			<h4>첨부파일</h4>
+			<div class="f_right">
+				<a href="#none" class="gBtn"><em class="icon08">추가</em></a>
+			</div>
+		</div>
+
+		<table class="tableStyle m_t5">
+			<colgroup>
+				<col style="width:10%" />
+				<col style="width:*" />
+				<col style="width:20%" />
+				<col style="width:15%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>No</th>
+					<th>파일명</th>
+					<th>등록일자</th>
+					<th>파일크기</th>
+				</tr>
+			</thead>
+			<tbody>
+				<td colspan="4" class="">파일이 없습니다</td>
+				<!--
+				<td>1</td>
+				<td>파일명</td>
+				<td>2017-02-06</td>
+				<td>47KB</td>
+				파일 추가시 
+				-->
+			</tbody>
+		</table>
+
+	</div>
+	<!-- //pop_cont -->
+</div>
+<!-- //pop_wrap -->
+</body>
+</html>
+
+
+
+
+
+
+

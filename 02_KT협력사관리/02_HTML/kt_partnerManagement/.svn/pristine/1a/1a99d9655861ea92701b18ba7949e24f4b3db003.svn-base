@@ -1,0 +1,587 @@
+<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>프로젝트명</title>
+<!-- CSS -->
+<link rel="stylesheet" href="../../resource/css/common.css" type="text/css" />
+<link rel="stylesheet" href="../../resource/jqgrid-4.12.1/css/ui.jqgrid.min.css" type="text/css" />
+<link rel="stylesheet" href="../../resource/jqgrid-4.12.1/plugins/quickpager/pagination.css" type="text/css" />
+</head>
+<body class="subBody line">
+
+	<div class="header">
+		<h1 class="logo"><a href="#none">KT협력사관리</a></h1>
+		<div class="gnbArea">
+			<ul class="gnb">
+				<li><a href="#non">기준관리</a>
+					<ul class="gnbSub">
+						<li><a href="#none">요소기술마스터조회</a></li>
+						<li><a href="#none">면허(자격증) 마스터 조회</a></li>
+						<li><a href="#none">기술규격서 조회</a></li>
+						<li><a href="#none">기술규격서 매핑</a></li>
+					</ul>
+				</li>
+				<li><a href="#non">등록평가</a>
+					<ul class="gnbSub">
+						<li><a href="#none">[물자] 등록평가 공고</a></li>
+						<li><a href="#none">[물자] 경영평가 승인</a></li>
+						<li><a href="#none">[공사/용역] 등록평가 공고</a></li>
+						<li><a href="#none">[공사/용역] 경영평가 승인</a></li>
+						<li><a href="#none">[BIZ] 협력사 등록평가 승인</a></li>
+					</ul>
+				</li>
+				<li><a href="#non">제재관리</a>
+					<ul class="gnbSub">
+						<li><a href="#none">협력사 제재 및 이슈 등록</a></li>
+						<li><a href="#none">협력사 제재등록 현황조회</a></li>
+					</ul>
+				</li>
+				<li class="selectd"><a href="#non">통합정보조회</a>
+					<ul class="gnbSub">
+						<li><a href="#none">[BIZ] 협력사 정보 조회</a></li>
+						<li><a href="#none">[물자] 협력사 통합검색</a></li>
+						<li><a href="#none">[공사/용역] 협력사 진행현황</a></li>
+						<li><a href="#none">[BIZ] 협력사 통합검색</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="topMenu">
+				<li class="menuPre"><a href="#none">메뉴이동</a></li>
+				<li class="menuNext"><a href="#none">메뉴이동</a></li>
+				<li class="siteMap"><a href="#none">전체메뉴</a></li>
+			</ul>	
+		</div>
+	</div>
+	<!-- //header -->
+
+	<div class="content">
+		<div class="lnbArea">
+			<h2 class="lnbTit icon01">통합 정보 조회</h2>
+			<div id="cssmenu">
+				<ul>
+					<!-- active 메뉴 노출 /  has-sub 하위 메뉴가 있을경우 -->
+					<li><a href="#none"><em>[BIZ]</em>협력사 정보 조회</a></li>
+					<li class="has-sub active"><a href="#none"><em>[물자]</em>협력사 통합검색</a>
+						<ul>
+							<li class="active"><a href="#none">협력사 별 진행현황</a></li>
+							<li><a href="#none">협력사 소싱 진행현황</a></li>
+						</ul>
+					</li>			
+					<li class="has-sub"><a><em>[공사/용역]</em>협력사 진행현황</a>
+						<ul>
+							<li><a href="#none">협력사 별 진행현황</a></li>
+							<li><a href="#none">협력사 소싱 진행현황</a></li>
+						</ul>
+					</li>
+					<li><a><em>[BIZ]</em>협력사 통합검색</a></li>
+				</ul>
+			</div>
+			<!-- //cssmenu -->
+		</div><!-- //lnbArea -->
+		<div class="contArea">
+
+			<a href="#none" class="lnbBtn">CLOSE</a>
+			
+			<div class="titArea">
+				<h2 class="tit">경영정보 리스크 메일발송 Rule 설정</h2>
+				<ul class="navigationBar">
+					<li><a href="#none">HOME</a></li>
+					<li><a href="#none">통합정보조회</a></li>
+					<li><a href="#none">[물자]협력사 통합검색</a></li>
+					<li><a href="#none">협력사 별 진행현황</a></li>
+				</ul>
+			</div>
+
+			<div class="sub-tit">
+				<div class="f_right">
+					<a href="#none" class="topBtn">저장</a>
+					<a href="#none" class="topBtn gray">뒤로</a>
+				</div>
+			</div>	
+
+			<div class="sub-tit">
+				<h3>구매그룹</h3>
+				<select class="titSelect">
+					<option>수주계약팀(기업사업부문)</option>					
+					<option>수주계약팀(Customer부문)</option>					
+					<option>글로벌사업추진실</option>
+				</select>
+			</div>	
+
+			<div class="sub-tit">
+				<h3>신용평가사 Watch 등급 설정</h3>
+			</div>	
+			
+			<table class="tableStyle t_center">
+				<colgroup>
+					<col style="width:*;">
+					<col style="width:20%;">
+					<col style="width:20%;">
+					<col style="width:20%;">
+					<col style="width:20%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>신용평가사</th>
+						<th>Watch등급</th>
+						<th>메일발송여부</th>
+						<th>제재구분</th>
+						<th>제재기간(일)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th rowspan="8"><strong class="tableTit">이크레더블<strong></th>
+						<td><strong class="point">유보</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point">관찰</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point purple">주의</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point blue">경보</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point red">위험</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point">회수의문</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point">휴폐업</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point orange">부도</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<th rowspan="9"><strong class="tableTit">나이스</strong></th>
+						<td><strong class="point">관찰</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point purple">주의</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point red">경고</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point orange">부도</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point">해제</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point">만료</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point">휴업</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point navy">폐업</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+					<tr>
+						<td><strong class="point green">기업회생</strong></td>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>전체</option>
+								<option>입찰제한</option>
+								<option>기타사유</option>
+							</select>
+						</td>
+						<td>363</td>
+					</tr>
+				</tbody>
+			</table>		
+
+			<div class="sub-tit">
+				<h3>메일수신자 지정</h3>
+			</div>	
+			
+			<table class="tableStyle t_center">
+				<colgroup>
+					<col style="width:*;">
+					<col style="width:33.33%;">
+					<col style="width:33.33%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>계약담당보조자</th>
+						<th>계약요청자(영업/수행)</th>
+						<th>감리자(수행PM)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td><input type="checkbox"></td>
+						<td><input type="checkbox"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="sub-tit">
+				<div class="f_right">
+					<a href="#none" class="btn"><em class="plus">수신자 추가</em></a>
+				</div>
+			</div>	
+			
+			<table class="tableStyle t_center">
+				<colgroup>
+					<col style="width:*;">
+					<col style="width:20%;">
+					<col style="width:20%;">
+					<col style="width:20%;">
+					<col style="width:20%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>사번</th>
+						<th>이름</th>
+						<th>부서</th>
+						<th>비고(역활)</th>
+						<th>삭제</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>123456789</td>
+						<td>홍길동</td>
+						<td>협력사관리팀</td>
+						<td>원가담당자</td>
+						<td><a href="#none" class="btnT">삭제</a></td>
+					</tr>
+					<tr>
+						<td>123456789</td>
+						<td>홍길동</td>
+						<td>협력사관리팀</td>
+						<td>원가담당자</td>
+						<td><a href="#none" class="btnT">삭제</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="sub-tit">
+				<h3>메일발송 주기 설정</h3>
+				<div class="f_right">
+					<a href="#none" class="btn"><em class="plus">주기추가</em></a>
+				</div>
+			</div>
+
+			<table class="tableStyle t_center">
+				<colgroup>
+					<col style="width:*;">
+					<col style="width:25%;">
+					<col style="width:25%;">
+					<col style="width:25%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>선택</th>
+						<th>주기</th>
+						<th>반복여부</th>
+						<th>삭제</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>24</option>
+							</select>
+							<em class="p_l10 p_r10">시</em>
+							<select>
+								<option>60</option>
+							</select>
+							<em class="p_l10 p_r10">분</em>
+						</td>
+						<td>
+							<select>
+								<option>반복</option>
+								<option>반복안함</option>
+							</select>
+						</td>
+						<td><a href="#none" class="btnT">삭제</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>
+							<select>
+								<option>24</option>
+							</select>
+							<em class="p_l10 p_r10">시</em>
+							<select>
+								<option>60</option>
+							</select>
+							<em class="p_l10 p_r10">분</em>
+						</td>
+						<td>
+							<select>
+								<option>반복</option>
+								<option>반복안함</option>
+							</select>
+						</td>
+						<td><a href="#none" class="btnT">삭제</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="sub-tit">
+				<h3>메일내용 설정</h3>
+			</div>
+
+			<table class="tableStyle t_center">
+				<colgroup>
+					<col style="width:10%;">
+					<col style="width:*;">					
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>시작말</th>
+						<td class="p_5">
+							<textarea class="txtAreaDesign" rows="3"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th>맺음말</th>
+						<td class="p_5">
+							<textarea class="txtAreaDesign" rows="3"></textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="sub-tit">
+				<h4>협력사 기본 정보</h4>
+			</div>
+
+			<table class="tableStyle t_center">
+				<colgroup>					
+					<col style="width:16.5%;">
+					<col style="width:16.5%;">
+					<col style="width:16.5%;">
+					<col style="width:16.5%;">
+					<col style="width:16.5%;">		
+					<col style="width:*;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>협력사명</th>
+						<td>LG CNS</td>
+						<th>신평사</th>
+						<td>이크레더블</td>
+						<th>신용등급</th>
+						<td><span class="creditB">BB</span></td>
+					</tr>
+					<tr>
+						<th>사업자번호</th>
+						<td>111-78-78954</td>
+						<th>대표자</th>
+						<td>김준환</td>
+						<th>Watch</th>
+						<td><span class="creditWarning">경고</span></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="sub-tit">
+				<h4>계약정보</h4>
+			</div>
+
+			<table class="tableStyle t_center">
+				<colgroup>					
+					<col style="width:11%;">	
+					<col style="width:11%;">	
+					<col style="width:11%;">	
+					<col style="width:11%;">	
+					<col style="width:11%;">	
+					<col style="width:11%;">	
+					<col style="width:11%;">	
+					<col style="width:11%;">	
+					<col style="width:*;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>계약번호</th>
+						<th>계약명</th>
+						<th>계약일</th>
+						<th>계약착공일</th>
+						<th>준공일</th>
+						<th>계약금액</th>
+						<th>계약요청자</th>
+						<th>감리자</th>
+						<th>계약담당보조자</th>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>			
+		
+		</div><!-- //contArea -->
+	</div>
+	<!-- //content -->
+
+</body>
+<!-- javascript -->
+<script src="../../resource/js/jquery.js" type="text/javascript"></script>
+<script src="../../resource/js/jquery-ui.js" type="text/javascript"></script>
+<script src="../../resource/js/design.js" type="text/javascript"></script>
+<script src="../../resource/jqgrid-4.12.1/js/jquery.jqgrid.min.js" type="text/javascript"></script>
+</html>
+

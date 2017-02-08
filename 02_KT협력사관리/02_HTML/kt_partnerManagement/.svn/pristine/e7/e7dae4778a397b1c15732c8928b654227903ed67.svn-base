@@ -1,0 +1,214 @@
+<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>프로젝트명</title>
+<!-- CSS -->
+<link rel="stylesheet" href="../../resource/css/common.css" type="text/css" />
+<link rel="stylesheet" href="../../resource/jqgrid-4.12.1/css/ui.jqgrid.min.css" type="text/css" />
+<link rel="stylesheet" href="../../resource/jqgrid-4.12.1/plugins/quickpager/pagination.css" type="text/css" />
+</head>
+<body class="subBody line">
+
+	<div class="header">
+		<h1 class="logo"><a href="#none">KT협력사관리</a></h1>
+		<div class="gnbArea">
+			<ul class="gnb">
+				<li><a href="#non">기준관리</a>
+					<ul class="gnbSub">
+						<li><a href="#none">요소기술마스터조회</a></li>
+						<li><a href="#none">면허(자격증) 마스터 조회</a></li>
+						<li><a href="#none">기술규격서 조회</a></li>
+						<li><a href="#none">기술규격서 매핑</a></li>
+					</ul>
+				</li>
+				<li><a href="#non">등록평가</a>
+					<ul class="gnbSub">
+						<li><a href="#none">[물자] 등록평가 공고</a></li>
+						<li><a href="#none">[물자] 경영평가 승인</a></li>
+						<li><a href="#none">[공사/용역] 등록평가 공고</a></li>
+						<li><a href="#none">[공사/용역] 경영평가 승인</a></li>
+						<li><a href="#none">[BIZ] 협력사 등록평가 승인</a></li>
+					</ul>
+				</li>
+				<li><a href="#non">제재관리</a>
+					<ul class="gnbSub">
+						<li><a href="#none">협력사 제재 및 이슈 등록</a></li>
+						<li><a href="#none">협력사 제재등록 현황조회</a></li>
+					</ul>
+				</li>
+				<li class="selectd"><a href="#non">통합정보조회</a>
+					<ul class="gnbSub">
+						<li><a href="#none">[BIZ] 협력사 정보 조회</a></li>
+						<li><a href="#none">[물자] 협력사 통합검색</a></li>
+						<li><a href="#none">[공사/용역] 협력사 진행현황</a></li>
+						<li><a href="#none">[BIZ] 협력사 통합검색</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="topMenu">
+				<li class="menuPre"><a href="#none">메뉴이동</a></li>
+				<li class="menuNext"><a href="#none">메뉴이동</a></li>
+				<li class="siteMap"><a href="#none">전체메뉴</a></li>
+			</ul>	
+		</div>
+	</div>
+	<!-- //header -->
+
+	<div class="content">
+		<div class="lnbArea">
+			<h2 class="lnbTit icon01">통합 정보 조회</h2>
+			<div id="cssmenu">
+				<ul>
+					<!-- active 메뉴 노출 /  has-sub 하위 메뉴가 있을경우 -->
+					<li><a href="#none"><em>[BIZ]</em>협력사 정보 조회</a></li>
+					<li class="has-sub active"><a href="#none"><em>[물자]</em>협력사 통합검색</a>
+						<ul>
+							<li class="active"><a href="#none">협력사 별 진행현황</a></li>
+							<li><a href="#none">협력사 소싱 진행현황</a></li>
+						</ul>
+					</li>			
+					<li class="has-sub"><a><em>[공사/용역]</em>협력사 진행현황</a>
+						<ul>
+							<li><a href="#none">협력사 별 진행현황</a></li>
+							<li><a href="#none">협력사 소싱 진행현황</a></li>
+						</ul>
+					</li>
+					<li><a><em>[BIZ]</em>협력사 통합검색</a></li>
+				</ul>
+			</div>
+			<!-- //cssmenu -->
+		</div><!-- //lnbArea -->
+		<div class="contArea">
+
+			<a href="#none" class="lnbBtn">CLOSE</a>
+			
+			<div class="titArea">
+				<h2 class="tit">협력사 제재등록 상세조회</h2>
+				<ul class="navigationBar">
+					<li><a href="#none">HOME</a></li>
+					<li><a href="#none">통합정보조회</a></li>
+					<li><a href="#none">[물자]협력사 통합검색</a></li>
+					<li><a href="#none">협력사 별 진행현황</a></li>
+				</ul>
+			</div>
+
+			<div class="sub-tit">
+				<div class="f_right">
+					<a href="#none" class="topBtn gray">닫기</a>
+				</div>
+			</div>	
+
+			<table class="tableStyle">
+				<colgroup>
+					<col style="width:20%;">
+					<col style="width:30%;">
+					<col style="width:20%;">
+					<col style="width:30%;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>제재등록명</th>
+						<td> B2B 협력사 재심의 요청 등록</td>
+						<th>차수</th>
+						<td>2차</td>
+					</tr>
+				</tbody>
+			</table>	
+			
+			<table class="tableStyle">
+				<colgroup>
+					<col style="width:20%;">
+					<col style="width:30%;">
+					<col style="width:20%;">
+					<col style="width:30%;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>협력사</th>
+						<td>LG CNS</td>
+						<th>구매구분</th>
+						<td>BIZ사업</td>
+					</tr>
+					<tr>
+						<th>제한구분</th>
+						<td>입찰제한</td>
+						<th>등록구분</th>
+						<td>신평사 Watch 등급변경</td>
+					</tr>
+					<tr>
+						<th>제재기간</th>
+						<td>2017-01-31 ~ 2017-01-31</td>
+						<th>등록자</th>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>	
+
+			<div class="sub-tit">
+				<h3>제재 등록 사유</h3>
+			</div>	
+			
+			<div class="txtAreaBox"><textarea rows="5" readonly="readonly">이크레더블 신평사 Watch 등급이 경고로 변경 되었습니다.</textarea></div>
+
+			<div class="sub-tit">
+				<h3>첨부문서</h3>
+			</div>	
+			
+			<div class="fileUploadArea">파일업로드영역</div>		
+			
+			<div class="sub-tit">
+				<h3>경영리스크 메일 발송 이력 내역</h3>
+			</div>	
+
+			<table class="tableStyle t_center">
+				<colgroup>
+					<col style="width:6%;">
+					<col style="width:20%;">
+					<col style="width:20%;">
+					<col style="width:*;">
+					<col style="width:20%;">
+					<col style="width:15%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>순번</th>
+						<th>수신자</th>
+						<th>역할</th>
+						<th>메일주소</th>
+						<th>메일발송 시간</th>
+						<th>메일방송 내용</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>						
+						<td>1</td>
+						<td>홍길동</td>
+						<td>계약담당보조자</td>
+						<td>kimyoungmin@kt.com</td>
+						<td>2017-01-31 / 18:10:00</td>
+						<td><a href="#none" class="btnT">조회</a></td>
+					</tr>
+					<tr>						
+						<td>2</td>
+						<td>홍길동</td>
+						<td>계약담당보조자</td>
+						<td>kimyoungmin@kt.com</td>
+						<td>2017-01-31 / 18:10:00</td>
+						<td><a href="#none" class="btnT">조회</a></td>
+					</tr>
+				</tbody>
+			</table>	
+		
+		</div><!-- //contArea -->
+	</div>
+	<!-- //content -->
+
+</body>
+<!-- javascript -->
+<script src="../../resource/js/jquery.js" type="text/javascript"></script>
+<script src="../../resource/js/jquery-ui.js" type="text/javascript"></script>
+<script src="../../resource/js/design.js" type="text/javascript"></script>
+<script src="../../resource/jqgrid-4.12.1/js/jquery.jqgrid.min.js" type="text/javascript"></script>
+</html>
+

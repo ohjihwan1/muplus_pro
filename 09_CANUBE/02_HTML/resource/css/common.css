@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import url(reset.css);
+
+
+header{position:fixed; top:0; width:100%; height:55px; padding:20px 0 0 15px; box-sizing:border-box; z-index:50;}
+header h1{width:100px; height:18px; background:url(../images/logo.png) no-repeat 50%; background-size:cover;}
+.s-menu-list{position:absolute; right:15px; top:10px; width:36px; height:36px; z-index:100000; background:url(../images/s_menu_list.gif) no-repeat 50%; background-size:cover;}
+
+.sl-area{width:100%; height:100%;}
+.sl{overflow:hidden; position:absolute; width:100%; height:100%;}
+.sl li{float:left;}
+.sl1{overflow:hidden; position:absolute; width:100%; height:100%; background:url(../images/sl_bg1.jpg) no-repeat 50%; background-size:cover;}
+.sl2{overflow:hidden; position:absolute; width:100%; height:100%; background:url(../images/sl_bg2.jpg) no-repeat 50%; background-size:cover;}
+
+footer{overflow:hidden; position:fixed; bottom:0; width:100%; padding:8px 0; z-index:50; background-color:#000}
+footer a{float:left; width:25%; padding-top:32px; font-size:1.1em; color:#fff; text-align:center;}
+footer a.bt1{background:url(../images/f_icon_sale.png) no-repeat 51% 0; background-size:auto 30px;}
+footer a.bt2{background:url(../images/f_icon_spanner.png) no-repeat 50% 0; background-size:auto 30px;}
+footer a.bt3{background:url(../images/f_icon_car.png) no-repeat 50% 0; background-size:auto 30px;}
+footer a.bt4{background:url(../images/f_icon_mypage.png) no-repeat 50% 0; background-size:auto 30px;}

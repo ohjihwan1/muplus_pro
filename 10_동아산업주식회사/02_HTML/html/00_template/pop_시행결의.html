@@ -1,0 +1,276 @@
+<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>동하산업</title>
+<!-- CSS -->
+<link rel="stylesheet" href="../../resource/css/common.css" type="text/css" />
+<!-- javascript -->
+<script src="../../resource/js/jquery-1.12.3.js" type="text/javascript"></script>
+<script src="../../resource/js/jquery-ui.js" type="text/javascript"></script>
+<script src="../../resource/js/common.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="pop_wrap" style="width:900px;"><!-- 개발 적용시 style="width:900px;" 삭제  -->
+	<div class="pop_tit">
+		<h2>시행결의</h2>
+	</div>
+	<div class="pop_cont">
+
+		<div class="btnArea type2 p_0">			
+			<a href="#none" class="btnL">결재요청</a>
+			<a href="#none" class="btnL">저장</a>
+		</div>
+
+		<ul class="tabDesign">
+			<li class="on" rel="tab1"><a href="#none">기본정보</a></li>
+			<li rel="tab2"><a href="#none">품목정보 및 대상업체</a></li>
+		</ul>
+
+		<div class="tabCont" id="tab1">
+			
+			<table class="tableStyle m_t0">
+				<colgroup>
+					<col style="width:13%;">
+					<col style="width:20%;">
+					<col style="width:13%;">
+					<col style="width:20%;">
+					<col style="width:13%;">
+					<col style="width:*">	
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>품의번호</th>
+						<td>
+							<input type="text" class="w120">
+							<input type="text" class="w30">
+						</td>
+						<th>품의일자</th>
+						<td><input type="text" class="datepicker w80"></td>
+						<th>작성자</th>
+						<td><input type="text"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="tableStyle m_t20">
+				<colgroup>
+					<col style="width:13%;">
+					<col style="width:20%;">
+					<col style="width:13%;">
+					<col style="width:20%;">
+					<col style="width:13%;">
+					<col style="width:*">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>건명</th>
+						<td colspan="3"><input type="text" class="wp100"></td>
+						<th>PR번호</th>
+						<td>
+							<select>
+								<option>PR01</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>계약구분</th>
+						<td>
+							<select>
+								<option>물자</option>
+							</select>
+						</td>							
+						<th>계약기간</th>
+						<td colspan="3">
+							<input type="text" class="datepicker w80"><em> ~ </em>
+							<input type="text" class="datepicker w80">
+						</td>
+					</tr>
+					<tr>
+						<th>Skill추천 여부</th>
+						<td><label><input type="checkbox">추천</label></td>							
+						<th>계약방법</th>
+						<td>
+							<label><input type="radio">경쟁</label>
+							<label><input type="radio">수의계약</label>
+						</td>
+						<th>평가방식</th>
+						<td>
+							<select>
+								<option>종합평가입찰</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>경쟁방법</th>
+						<td>
+							<select>
+								<option>일반경쟁</option>
+							</select>
+						</td>
+						<th>낙찰자결정방법</th>
+						<td>
+							<select>
+								<option>최저가(총액)</option>
+							</select>
+						</td>
+						<th>예산액</th>
+						<td><input type="text" class="w120 t_right" value="10,000,000"><em class="p_l5">원</em></td>					
+					</tr>
+					<tr>
+						<th>견적방법</th>
+						<td>
+							<select>
+								<option>견적건별</option>
+							</select>
+						</td>
+						<th>입찰참가<br>신청여부</th>
+						<td>
+							<label><input type="radio">접수</label>
+							<label><input type="radio">미접수</label>
+						</td>
+						<th>입찰참가자접수<br>마감일시</th>
+						<td><input type="text" class="datepicker w80"></td>
+					</tr>
+					<tr>
+						<th>지급조건</th>
+						<td>
+							<select>
+								<option>여름지급(60)</option>
+							</select>
+						</td>
+						<th>공고일자</th>
+						<td><input type="text" class="datepicker w80"></td>
+						<th>목표가입력담당</th>
+						<td>
+							<input type="text" class="w110">
+							<a href="#none" class="tBtn">검색</a>
+						</td>
+					</tr>
+					<tr>
+						<th>생성구분</th>
+						<td><input type="text"></td>
+						<th>현장설명회여부</th>
+						<td>
+							<label><input type="radio">개최</label>
+							<label><input type="radio">미개최</label>
+						</td>
+						<th>현장설명회일시</th>
+						<td><input type="text" class="datepicker w80"></td>
+					</tr>
+					<tr>
+						<th>현장설명회장소</th>
+						<td><input type="text"></td>
+						<th>공통수급여부</th>
+						<td colspan="3"><label><input type="checkbox">YES</label></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="sub_tit">
+				<h4>종합평가</h4>
+			</div>
+
+			<table class="tableStyle">
+				<colgroup>
+					<col style="width:13%;">
+					<col style="width:20%;">
+					<col style="width:13%;">
+					<col style="width:20%;">
+					<col style="width:13%;">
+					<col style="width:*">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>제안요청서<br>발송일시</th>
+						<td><input type="text" class="datepicker w80"></td>
+						<th>제안요청설명회</th>
+						<td><input type="text" class="datepicker w80"></td>
+						<th>제안요청<br>설명회장소</th>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<th>입찰서(제안)<br>마감일시</th>
+						<td><input type="text" class="datepicker w80"></td>
+						<th>제안발표<br>예정일시</th>
+						<td><input type="text" class="datepicker w80"></td>
+						<th>제안발표장소</th>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<th>평가방법</th>
+						<td><input type="text" class="datepicker w80"></td>
+						<th>평가비율</th>
+						<td colspan="3">
+							<strong class="p_r5">기술평가</strong><input type="text" class="w50"><em class="p_l5">%</em>
+							<strong class="p_l10 p_r5">BMT평가</strong><input type="text" class="w50"><em class="p_l5">%</em>
+							<strong class="p_l10 p_r5">가격평가</strong><input type="text" class="w50"><em class="p_l5">%</em>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="layoutArea">
+				<div class="layoutLeft">
+					<div class="sub_tit">
+						<h4>특기사항</h4>
+					</div>
+					<textarea rows="3"></textarea>
+				</div>
+				<div class="layoutRight">
+					<div class="sub_tit">
+						<h4>수의/제한/지명입찰 사유</h4>
+					</div>
+					<textarea rows="3"></textarea>
+				</div>
+			</div>
+
+			<div class="sub_tit p_t10">
+				<h4>공고내용</h4>
+			</div>
+			<textarea rows="5"></textarea>
+
+			<div class="layoutArea">
+				<div class="layoutLeft">
+					<div class="sub_tit">
+						<h4>첨부파일<em>(내부보고용)</em></h4>
+						<div class="f_right">
+							<a href="#none" class="gBtn"><em class="icon08">추가</em></a>
+						</div>
+					</div>
+					<div class="realGride_wrap m_t5">
+						<!-- 리얼그리드 들어가는 영역 -->
+						<img src="../../resource/images/common/realGride_sample_img.png" style="width:100%;">
+					</div>
+				</div>
+				<div class="layoutRight">
+					<div class="sub_tit">
+						<h4>첨부파일<em>(외부협력사용)</em></h4>
+						<div class="f_right">
+							<a href="#none" class="gBtn"><em class="icon08">추가</em></a>
+						</div>
+					</div>
+					<div class="realGride_wrap m_t5">
+						<!-- 리얼그리드 들어가는 영역 -->
+						<img src="../../resource/images/common/realGride_sample_img.png" style="width:100%;">
+					</div>
+				</div>
+			</div>
+
+		</div><!-- //기본정보 -->
+
+		<div class="tabCont" id="tab2">품목정보 및 대상업체</div><!-- //품목정보 및 대상업체 -->
+	
+	</div>
+	<!-- //pop_cont -->
+</div>
+<!-- //pop_wrap -->
+</body>
+</html>
+
+
+
+
+
+
+

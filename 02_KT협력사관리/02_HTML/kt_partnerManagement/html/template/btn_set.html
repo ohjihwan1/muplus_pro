@@ -1,0 +1,125 @@
+<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>프로젝트명</title>
+<!-- CSS -->
+<link rel="stylesheet" href="../../resource/css/common.css" type="text/css" />
+<link rel="stylesheet" href="../../resource/jqgrid-4.12.1/css/ui.jqgrid.min.css" type="text/css" />
+<link rel="stylesheet" href="../../resource/jqgrid-4.12.1/plugins/quickpager/pagination.css" type="text/css" />
+</head>
+<body class="subBody line">
+
+	<div class="header">
+		<h1 class="logo"><a href="#none">KT협력사관리</a></h1>
+		<div class="gnbArea">
+			<ul class="gnb">
+				<li><a href="#non">기준관리</a>
+					<ul class="gnbSub">
+						<li><a href="#none">요소기술마스터조회</a></li>
+						<li><a href="#none">면허(자격증) 마스터 조회</a></li>
+						<li><a href="#none">기술규격서 조회</a></li>
+						<li><a href="#none">기술규격서 매핑</a></li>
+					</ul>
+				</li>
+				<li><a href="#non">등록평가</a>
+					<ul class="gnbSub">
+						<li><a href="#none">[물자] 등록평가 공고</a></li>
+						<li><a href="#none">[물자] 경영평가 승인</a></li>
+						<li><a href="#none">[공사/용역] 등록평가 공고</a></li>
+						<li><a href="#none">[공사/용역] 경영평가 승인</a></li>
+						<li><a href="#none">[BIZ] 협력사 등록평가 승인</a></li>
+					</ul>
+				</li>
+				<li><a href="#non">제재관리</a>
+					<ul class="gnbSub">
+						<li><a href="#none">협력사 제재 및 이슈 등록</a></li>
+						<li><a href="#none">협력사 제재등록 현황조회</a></li>
+					</ul>
+				</li>
+				<li class="selectd"><a href="#non">통합정보조회</a>
+					<ul class="gnbSub">
+						<li><a href="#none">[BIZ] 협력사 정보 조회</a></li>
+						<li><a href="#none">[물자] 협력사 통합검색</a></li>
+						<li><a href="#none">[공사/용역] 협력사 진행현황</a></li>
+						<li><a href="#none">[BIZ] 협력사 통합검색</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="topMenu">
+				<li class="menuPre"><a href="#none">메뉴이동</a></li>
+				<li class="menuNext"><a href="#none">메뉴이동</a></li>
+				<li class="siteMap"><a href="#none">전체메뉴</a></li>
+			</ul>	
+		</div>
+	</div>
+	<!-- //header -->
+
+	<div class="content">
+		<div class="lnbArea">
+			<h2 class="lnbTit icon01">통합 정보 조회</h2>
+			<div id="cssmenu">
+				<ul>
+					<!-- active 메뉴 노출 /  has-sub 하위 메뉴가 있을경우 -->
+					<li><a href="#none"><em>[BIZ]</em>협력사 정보 조회</a></li>
+					<li class="has-sub active"><a href="#none"><em>[물자]</em>협력사 통합검색</a>
+						<ul>
+							<li class="active"><a href="#none">협력사 별 진행현황</a></li>
+							<li><a href="#none">협력사 소싱 진행현황</a></li>
+						</ul>
+					</li>			
+					<li class="has-sub"><a><em>[공사/용역]</em>협력사 진행현황</a>
+						<ul>
+							<li><a href="#none">협력사 별 진행현황</a></li>
+							<li><a href="#none">협력사 소싱 진행현황</a></li>
+						</ul>
+					</li>
+					<li><a><em>[BIZ]</em>협력사 통합검색</a></li>
+				</ul>
+			</div>
+			<!-- //cssmenu -->
+		</div><!-- //lnbArea -->
+		<div class="contArea">
+			<div class="btnArea t_left">
+				<a class="btn" href="#none"><em class="searchTogglebtn on">검색조건 열기</em></a>
+				<a class="btn" href="#none"><em class="searchTogglebtn">검색조건 닫기</em></a>
+				<a class="btn" href="#none"><em class="downIcon">일괄 다운로드</em></a>
+				<a class="btn" href="#none"><em class="check">심의요청</em></a>
+				<a class="btn" href="#none"><em class="plus">면허추가</em></a>
+				<a class="btn" href="#none"><em class="user">수신자 추가</em></a>
+				<a class="btn" href="#none"><em class="plus">주기추가</em></a>
+				<a class="btn" href="#none"><em class="white">재제등록</em></a>
+			</div>
+
+			<div class="titArea">
+				<h2 class="tit">상단버튼</h2>
+				<a href="#none" class="topBtn">심의요청</a>
+				<a href="#none" class="topBtn gray">이전으로</a>
+				<a href="#none" class="topBtn">합격</a>
+				<a href="#none" class="topBtn">보완요청</a>
+				<a href="#none" class="topBtn">부적합</a>
+				<a href="#none" class="topBtn gray">닫기</a>
+				<a href="#none" class="topBtn">저장</a>
+				<a href="#none" class="topBtn">등록</a>
+				<a href="#none" class="topBtn gray">취소</a>
+			</div>
+
+			<div class="popBtnArea t_left">
+				<h2 class="tit">팝업하단 버튼</h2>
+				<a href="#none" class="topBtn">팝업하단 버튼</a>
+				<a href="#none" class="topBtn">등록</a>
+				<a href="#none" class="topBtn gray">닫기</a>
+				<a href="#none" class="topBtn gray">취소</a>
+			</div>
+		</div><!-- //contArea -->
+	</div>
+	<!-- //content -->
+
+</body>
+<!-- javascript -->
+<script src="../../resource/js/jquery.js" type="text/javascript"></script>
+<script src="../../resource/js/jquery-ui.js" type="text/javascript"></script>
+<script src="../../resource/js/design.js" type="text/javascript"></script>
+<script src="../../resource/jqgrid-4.12.1/js/jquery.jqgrid.min.js" type="text/javascript"></script>
+</html>
+

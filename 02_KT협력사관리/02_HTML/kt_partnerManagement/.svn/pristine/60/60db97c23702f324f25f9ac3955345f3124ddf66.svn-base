@@ -1,0 +1,114 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="subject" content="" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta name="copyright" content="" />
+<meta http-equiv="imagetoolbar" content="no" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="" />
+<style type="text/css">
+html{font-family :  '맑은고딕', 'Malgun Gothic';font-size:12px;}
+body {min-width:1280px;  background:#fdfdfd; overflow-x:hidden; }
+*{margin: 0;padding: 0;border: 0;}
+html, body, div, span,  p, ul, li, img,h1, h2, h3, h4, h5, h6, object, iframe, a, textarea, button, input, label,em, font, strong,table, 
+tbody, tfoot, thead, tr, th, td blockquote, pre,  abbr, acronym, address, sub, sup,dl, dt, dd, ol,  fieldset, form, legend, caption
+{margin: 0; padding: 0;border: 0;}
+table {border-collapse: collapse; border-spacing: 0;}  td,th {padding: 0;} 
+ul,ol{margin:0px;padding:0px;list-style:none;} dl,dt,dd{margin:0px;padding:0px;}
+p{margin:0px;padding:0px;} input{margin:0px;padding:0px;}
+a{text-decoration:none; color:#3b3838;}
+.wrap {width:96%; margin:0 auto;}
+.header{position:relative; width: 100%;height: 64px; margin: 20px 0 10px 0;}
+h1 {position:absolute; z-index:1; font-size:50px; font-weight:normal; display:inline-block; float:left; background:#fdfdfd;}
+.name {position:absolute; top:15px; right:0;   font-size:13px;}
+.name span {width:80px; display:inline-block; text-align:left !important; padding:2px 0;}
+.mu {position:absolute; width:90px; top:15px; right:0;} .mu img {width:100%;}
+
+.t_defalut {width:100%; border-top: 5px solid #ba142f; font-size:13px; }
+.t_defalut tr:hover td {  border-bottom:1px solid #ba142f;}
+.t_defalut tr:hover td a {color:#ba142f;}
+.t_defalut th, .t_defalut td {border:1px solid #d9d9d9; padding:6px;}
+.t_defalut td:nth-child(1), .t_defalut td:nth-child(7) {font-weight:bold;}
+.t_defalut td:nth-child(1)  {background:#5a5a5a !important; color:#fff; text-align:center !important;}
+.t_defalut tr:nth-child(odd) td {background:#fcfcfc;}
+.t_defalut td:last-child  {font-weight:bold; color:red;}
+.t_defalut th {font-weight:bold; background:#3b3838; color:#fff;}
+.t_defalut td {background-color:#fff;}
+.t_defalut td.bg_line  {background:#fff !important; height:30px; border-width:0 0 2px 0 !important; border-style:solid;  border-color:#626262;}
+.t_defalut td.part_line{background:#fff !important; height:1px;  border-width:0 0 1px 0 !important; border-style:solid;  border-color:#626262;}
+.a_m01 a {margin:4px 0; display:inline-block}
+a { color:#6b97ce; }
+a:visited { color:#ba142f; }
+#footer{}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+	<div class="header">
+		<h1>KT 협력사관리</h1>
+        <div class="infor">
+            <div class="name">
+				<p><span>DESIGNER</span>김아미 차장 | 010.4214.3570 | kahmi@muplus.co.kr</p>
+                <p><span>PUBLISHE</span>박병조 과장 | 010.4841.3378 | eva01x@muplus.co.kr</p>				
+            </div>
+        </div>
+	</div>
+	<div class="middle">
+		<table class="t_defalut">
+            <!-- <colgroup>
+		        <col style="width:12%"> 
+		        <col style="width:15%">
+				 <col style="width:*">
+                <col style="width:10%">
+		        <col style="width:10%">
+				<col style="width:10%">
+                <col style="width:5%">
+		        <col style="width:8%">               
+                <col style="width:5%">
+		        <col style="width:5%">
+		        <col style="width:10%">
+	        </colgroup> -->
+            <thead>
+			    <tr>
+				    <th>1 Depth</th>
+				    <th>2 Depth</th>
+				    <th>3 Depth</th>
+				    <th>4 Depth</th>
+					<th>5 Depth</th>
+				    <th>Pop/Lay</th>
+				    <th>Directory</th>
+				    <th>File Name</th>
+				    <th>Date</th>
+				    <th>Update</th>
+                    <th>ISSUES</th>
+			    </tr>
+            </thead>
+            <!------------------------------------ 템플릿 ---------------------------------------->
+            <tbody>
+				<tr>
+					<td>LOGIN</td>
+					<td>login</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>/01_main/</td>
+					<td><a href="html/template/sample.html" target="_blank">sample.html</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr><td colspan="11" class="bg_line"></td></tr>				
+			</tbody>
+		</table>
+	</div>
+</div>
+</body>
+</html>
+
+

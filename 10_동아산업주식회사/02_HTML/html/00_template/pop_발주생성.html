@@ -1,0 +1,187 @@
+<!doctype html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>동하산업</title>
+<!-- CSS -->
+<link rel="stylesheet" href="../../resource/css/common.css" type="text/css" />
+<!-- javascript -->
+<script src="../../resource/js/jquery-1.12.3.js" type="text/javascript"></script>
+<script src="../../resource/js/jquery-ui.js" type="text/javascript"></script>
+<script src="../../resource/js/common.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="pop_wrap" style="width:900px;"><!-- 개발 적용시 style="width:900px;" 삭제  -->
+	<div class="pop_tit">
+		<h2>발주생성</h2>
+	</div>
+	<div class="pop_cont">
+		
+		<div class="btnArea type2 p_0">
+			<a href="#none" class="btnL">저장</a>
+			<a href="#none" class="btnL">발주전송</a>
+		</div>
+
+			
+		<div class="sub_tit">
+			<h4>발주정보</h4>
+		</div>
+
+		<table class="tableStyle m_t0">
+			<colgroup>
+				<col style="width:13%;">
+				<col style="width:20%;">
+				<col style="width:13%;">
+				<col style="width:20%;">
+				<col style="width:13%;">
+				<col style="width:*">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>발주건명</th>
+					<td colspan="3"><input type="text" class="wp100"></td>
+					<th>발주일</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>발주번호</th>
+					<td>저장시 생성됩니다.</td>
+					<th>작성자</th>
+					<td></td>
+					<th>상태</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>납품기한</th>
+					<td><input type="text" class="datepicker w80"></td>
+					<th>발주구분</th>
+					<td colspan="3">
+						<label><input type="radio">입고발주</label>
+						<label><input type="radio">직납발주</label>
+						<label><input type="radio">선발주</label>
+						<label><input type="radio">기타</label>
+					</td>
+				</tr>
+				<tr>
+					<th>고객사</th>
+					<td>
+						<input type="text" class="w30">
+						<select class="w120">
+							<option>선택</option>
+						</select>
+					</td>
+					<th>부가정보</th>
+					<td colspan="3">뭐를 넣어야 하나?</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="sub_tit">
+			<h4>공급사정보</h4>
+		</div>
+
+		<table class="tableStyle">
+			<colgroup>
+				<col style="width:13%;">
+				<col style="width:20%;">
+				<col style="width:13%;">
+				<col style="width:20%;">
+				<col style="width:13%;">
+				<col style="width:*">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>공급사</th>
+					<td colspan="3">업체검색버튼을 눌러서 업체를 선택해주세요.
+						<a href="#none" class="gBtn"><em class="icon08">업체검색</em></a>
+					</td>
+					<th>공급사확인일</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th>담당자명</th>
+					<td><input type="text" class="w180"></td>
+					<th>담당자전화번호</th>
+					<td><input type="text" class="w180"></td>
+					<th>담당자메일</th>
+					<td><input type="text" class="w180"></td>
+				</tr>
+			</tbody>
+		</table>
+		
+		
+		<div class="sub_tit">
+			<h4>발주물품 <em>(발주금액 : 0)</em></h4>
+			<div class="f_right">
+				<a href="#none" class="gBtn"><em class="icon08">물품조회</em></a>
+				<a href="#none" class="gBtn"><em class="icon08">물품추가</em></a>
+				<a href="#none" class="gBtn"><em class="icon08">삭제</em></a>
+			</div>
+		</div>
+
+		<img src="../../resource/images/common/s_realGride_sample_img.jpg" alt="" class="wp100 m_t5"/>
+		
+		<div class="tbl_bot_area">
+			<div class="f_right">
+				<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="sub_tit p_t10">
+			<h4>특기사항</h4>
+		</div>
+		<textarea rows="5" maxlength="300"></textarea>
+		<p class="t_right">0/300</p>
+
+		<div class="sub_tit">
+			<h4>첨부파일</h4>
+			<div class="f_right">
+				<a href="#none" class="gBtn"><em class="icon08">추가</em></a>
+			</div>
+		</div>
+		
+		<table class="tableStyle m_t5">
+			<colgroup>
+				<col style="width:10%" />
+				<col style="width:*" />
+				<col style="width:20%" />
+				<col style="width:15%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>No</th>
+					<th>파일명</th>
+					<th>등록일자</th>
+					<th>파일크기</th>
+				</tr>
+			</thead>
+			<tbody>
+				<td colspan="4" class="">파일이 없습니다</td>
+				<!--
+				<td>1</td>
+				<td>파일명</td>
+				<td>2017-02-06</td>
+				<td>47KB</td>
+				파일 추가시 -->
+			</tbody>
+		</table>
+
+	</div>
+	<!-- //pop_cont -->
+</div>
+<!-- //pop_wrap -->
+</body>
+</html>
+
+
+
+
+
+
+
