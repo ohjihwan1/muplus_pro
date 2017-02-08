@@ -23,8 +23,10 @@ header h1{width:100px; height:18px; background:url(../images/logo.png) no-repeat
 .user-menu li.menu-con5{background:url(../images/menu_con5.png) no-repeat 31px 50%; background-size:45px auto;}
 .user-menu li.menu-con6{background:url(../images/menu_con6.png) no-repeat 31px 50%; background-size:45px auto;}
 .user-menu li.menu-con7{background:url(../images/menu_con7.png) no-repeat 31px 50%; background-size:34px auto;}
-.user-menu li a{display:block; position:relative;  padding:26px 0 26px 88px; font-size:1.7em;}
-.user-menu li a:after{content:''; position:absolute; right:20px; top:50%; width:9px; height:16px; margin-top:-8px; background:url(../images/menu_arr.png) no-repeat; background-size:9px auto;}
+.user-menu li.menu-con8{background:url(../images/menu_con8.png) no-repeat 31px 50%; background-size:40px auto;}
+.user-menu li.menu-con9{background:url(../images/menu_con9.png) no-repeat 31px 50%; background-size:38px auto;}
+.user-menu li a{display:block; position:relative;  padding:26px 0 26px 88px; font-size:1.7em; background:url(../images/menu_arr.png) no-repeat right 20px center; background-size:9px auto;}
+/* .user-menu li a:after{content:''; position:absolute; right:20px; top:50%; width:9px; height:16px; margin-top:-8px; background:url(../images/menu_arr.png) no-repeat; background-size:9px auto;} */
 .user-menu a em{position:absolute; left:50px; top:15px; width:24px; height:24px; padding-top:3px; border-radius:24px; box-sizing:border-box; text-align:center; color:#fff; font-size:13px; background-color:#f47726;}
 .user-menu li a span{font-size:0.82em;}
 .user-menu li:active{border:2px solid #f47726; border-radius:4px;}
