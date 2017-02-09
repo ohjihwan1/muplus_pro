@@ -7,8 +7,14 @@
 <link rel="stylesheet" href="../resource/css/common.css"/>
 <title>CANUBE</title>
 </head>
+<script src="../resource/js/jquery-1.12.4.min.js"></script>
 <script>
-
+	$(function(){
+		$('select').click(function(){
+			$('select').removeClass('active')
+			$(this).addClass('active')
+		});
+	});
 </script>
 <body>
 	<div class="wrap">
@@ -16,14 +22,86 @@
 			<h1 class="shop"></h1>
 			<a href="#none" class="s-menu-list type2"></a>
 		</header>
-		<div class="sel-area">
-			<select>
-				<option>필터1</option>
-			</select>
-			<select>
-				<option>필터2</option>
-			</select>
+		<div class="content m_t55">
+			<ul class="sel-area">
+				<li>
+					<select>
+						<option>필터1</option>
+					</select>
+				</li>
+				<li>
+					<select>
+						<option>필터2</option>
+					</select>
+				</li>
+			</ul>
+
+			<ul class="thema_list_area">
+				<li>
+					<a href="#none" class="thema">
+						<em class="my"></em>
+						<img src="../resource/images/Thema1.jpg" alt="">
+						<p class="state">완료</p>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="thema">
+						<em class="my"></em>
+						<img src="../resource/images/Thema2.jpg" alt="">
+						<p class="state tpye2">진행중</p>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="thema">
+						<img src="../resource/images/Thema3.jpg" alt="">
+						<p class="state">완료</p>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="thema">
+						<img src="../resource/images/Thema4.jpg" alt="">
+						<p class="state">완료</p>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="thema">
+						<img src="../resource/images/Thema5.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="thema">
+						<em class="my"></em>
+						<img src="../resource/images/Thema1.jpg" alt="">
+						<p class="state">완료</p>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="thema">
+						<em class="my"></em>
+						<img src="../resource/images/Thema2.jpg" alt="">
+						<p class="state tpye2">진행중</p>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="thema">
+						<img src="../resource/images/Thema3.jpg" alt="">
+						<p class="state">완료</p>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="thema">
+						<img src="../resource/images/Thema4.jpg" alt="">
+						<p class="state">완료</p>
+					</a>
+				</li>
+				<li>
+					<a href="#none" class="thema">
+						<img src="../resource/images/Thema5.jpg" alt="">
+					</a>
+				</li>
+			</ul>
 		</div>
+		<a href="#none" class="big-plus"></a>
 		<div class="menu-btn-area">
 			<a href="#none" class="bt1">프로모션</a>
 			<a href="#none" class="bt2">정비마켓</a>
