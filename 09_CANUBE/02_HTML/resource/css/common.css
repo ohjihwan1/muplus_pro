@@ -9,7 +9,7 @@ header h1.logo{width:100px; height:18px; background:url(../images/logo.png) no-r
 header h1.shop{width:142px; height:22px; background:url(../images/logo_shop.png) no-repeat 50%; background-size:cover;}
 
 
-.s-menu-list{position:absolute; right:15px; top:10px; width:36px; height:36px; z-index:100000; background:url(../images/s_menu_list.gif) no-repeat 50%; background-size:cover;}
+.s-menu-list{position:absolute; right:15px; top:10px; width:36px; height:36px; z-index:100; background:url(../images/s_menu_list.gif) no-repeat 50%; background-size:cover;}
 .s-menu-list.type2{background:url(../images/s_menu_list2.gif) no-repeat 50%; background-size:cover;}
 .sl-area{width:100%; height:100%;}
 .sl{overflow:hidden; position:absolute; width:100%; height:100%;}
@@ -20,9 +20,10 @@ header h1.shop{width:142px; height:22px; background:url(../images/logo_shop.png)
 .sel-area{overflow:hidden; width:100%;}
 .sel-area li{float:left; width:50%; padding-right:0; padding-left:4px; font-size:1rem; box-sizing:border-box;}
 .sel-area li:nth-child(odd){ padding-right:4px; padding-left:0;}
-.sel-area li select{width:100%; height:45px; padding-left:17px; font-size:1.5em; box-sizing:border-box; border-radius:4px;  background:#fff url(../images/sel_arr.png) no-repeat right 14px center; background-size:20px auto;}
+.sel-area li select{width:100%; height:45px; padding-left:17px; font-size:1.5em; box-sizing:border-box; border-radius:4px; outline:none; background:#fff url(../images/sel_arr.png) no-repeat right 14px center; background-size:20px auto;}
 .sel-area li:first-child select{margin:0;}
-.sel-area li select.active{border:1px solid #f47726; color:#f47726; background:#fff url(../images/sel_arr_on.png) no-repeat right 14px center; background-size:20px auto;}
+/* .sel-area li select.active{border:1px solid #f47726; color:#f47726; background:#fff url(../images/sel_arr_on.png) no-repeat right 14px center; background-size:20px auto;} */
+.sel-area li select:focus{border:1px solid #f47726; color:#f47726; background:#fff url(../images/sel_arr_on.png) no-repeat right 14px center; background-size:20px auto;}
 
 .content{padding:15px 15px 78px; height:100%; box-sizing:border-box;}
 
@@ -32,7 +33,7 @@ header h1.shop{width:142px; height:22px; background:url(../images/logo_shop.png)
 .thema_list_area li .thema{display:block; position:relative; height:190px;}
 .thema_list_area li .thema img{width:100%; height:100%;}
 .my{position:absolute; left:10px; top:10px; padding:9px; background:url(../images/user_icon.png) no-repeat; background-size:18px;}
-.state{position:absolute; right:10px; top:10px; width:31px; height:31px; padding-top:8px; border:1px solid #fff;  border-radius:31px; font-size:0.8em; color:#fff; text-align:center; box-sizing:border-box; background-color:#666;}
+.state{position:absolute; right:10px; top:10px; width:31px; height:31px; padding-top:10px; border:1px solid #fff;  border-radius:31px; font-size:0.8em; color:#fff; text-align:center; box-sizing:border-box; background-color:#666;}
 .state.tpye2{background-color:#f47726;}
 
 

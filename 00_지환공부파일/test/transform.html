@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+	ul,ol,li{list-style:none;}
+	.box{position:relative; overflow:hidden; left:50%; margin-left:-100px; top:50%; margin-top:100px; width:200px; height:200px; background:url(Thema2.jpg)no-repeat; background-size:100%;}
+	.box .menu{display:none; position:absolute; bottom:10px; right:15px; z-index:5;}
+	.box .menu li{float:left;}
+	.box .menu li a{display:block; margin-left:5px; width:20px; height:20px; background-color:#fff;}
+	.mayan{position:absolute; left:200px; top:200px; opacity:0.5; border-left:100px solid transparent; border-top:70px solid transparent; border-bottom:70px solid #000; border-right:100px solid #000; box-sizing:border-box;}
+</style>
+<script src="jquery-1.12.4.min.js"></script>
+<script>
+	 $(function(){
+            $(".box").hover(function(){
+                // 마우스 오버할 때  이미지 대각선으로 들어오기
+                $(".mayan").css({
+                    top:"100%"  , left:"100%"
+                })
+                $(".mayan").stop().animate({
+                    top:60  , left:0
+                })
+				$('.menu').stop().delay(500).fadeIn()
+            },function(){
+                // 마우스 벗어날 때 이미지 왼쪽으로 이동하기
+                $(".mayan").stop().animate({
+                    left:"100%"
+                })
+				$('.menu').stop().fadeOut()
+            })
+        })
+</script>
+</head>
+<body>
+	<div class="box">
+		<ul class="menu">
+			<li><a href="#none"></a></li>
+			<li><a href="#none"></a></li>
+			<li><a href="#none"></a></li>
+		</ul>
+		<div class="mayan"></div>
+	</div>
+</body>
+</html>
